@@ -12,3 +12,4 @@ dependencies:
  - pip
  - seaborn
  - scikit-learn
+ - neptune
