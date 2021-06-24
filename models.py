@@ -28,12 +28,8 @@ def create_params_grid(scalers: Dict, decompositions: Dict, estimators: Dict) ->
     return params_grid_without_samplings
 
 
-decompositions = { 'pca1': {'decomposition': [PCA()],
+decompositions = { 'pca': {'decomposition': [PCA()],
                             'decomposition__n_components': [2,5,10,100,.95,.7], #sorted(set(np.logspace(0.4, 2, 10, dtype='int', endpoint=False))),
-                            'decomposition__whiten': [False, True],
-                            'decomposition__svd_solver': ['auto', 'full', 'arpack', 'randomized']},
-                   'pca2': {'decomposition': [PCA()],
-                            'decomposition__n_components': np.logspace(0,1,10, endpoint=False)/10,
                             'decomposition__whiten': [False, True],
                             'decomposition__svd_solver': ['auto', 'full', 'arpack', 'randomized']},
                    'kpca': {'decomposition': [KernelPCA()],
