@@ -5,10 +5,16 @@ channels:
 dependencies:
  - python==3.8.2
  - pandas
- - pytest
- - isort
- - pre-commit
- - flake8
+ - numpy
  - pip
- - seaborn
- - scikit-learn
+ - pip:
+    - pytest
+    - isort
+    - pre-commit
+    - flake8
+    - scikit-learn
+    - imblearn
+    - matplotlib
+    - seaborn
+    - neptune-client
+    - neptune-notebooks
