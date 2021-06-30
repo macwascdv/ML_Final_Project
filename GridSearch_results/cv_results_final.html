@@ -24,33 +24,22 @@
       <th>param_estimator__gamma</th>
       <th>param_estimator__kernel</th>
       <th>params</th>
-      <th>split0_test_f1_weighted</th>
-      <th>split1_test_f1_weighted</th>
-      <th>split2_test_f1_weighted</th>
-      <th>mean_test_f1_weighted</th>
-      <th>std_test_f1_weighted</th>
-      <th>rank_test_f1_weighted</th>
-      <th>split0_test_recall_weighted</th>
-      <th>split1_test_recall_weighted</th>
-      <th>split2_test_recall_weighted</th>
-      <th>mean_test_recall_weighted</th>
-      <th>std_test_recall_weighted</th>
-      <th>rank_test_recall_weighted</th>
-      <th>split0_test_precision_weighted</th>
-      <th>split1_test_precision_weighted</th>
-      <th>split2_test_precision_weighted</th>
-      <th>mean_test_precision_weighted</th>
-      <th>std_test_precision_weighted</th>
-      <th>rank_test_precision_weighted</th>
+      <th>split0_test_score</th>
+      <th>split1_test_score</th>
+      <th>split2_test_score</th>
+      <th>split3_test_score</th>
+      <th>mean_test_score</th>
+      <th>std_test_score</th>
+      <th>rank_test_score</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>49.665390</td>
-      <td>0.210545</td>
-      <td>7.324288</td>
-      <td>10.130919</td>
+      <td>82.373391</td>
+      <td>0.189362</td>
+      <td>0.142735</td>
+      <td>0.009226</td>
       <td>PCA()</td>
       <td>2</td>
       <td>full</td>
@@ -69,36 +58,25 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>{'decomposition': PCA(), 'decomposition__n_components': 2, 'decomposition__svd_solver': 'full', 'decomposition__whiten': False, 'estimator': DecisionTreeClassifier(), 'estimator__class_weight': 'balanced', 'estimator__criterion': 'entropy', 'estimator__max_depth': 2, 'estimator__splitter': 'random', 'scaler': StandardScaler()}</td>
-      <td>0.814548</td>
-      <td>0.017923</td>
-      <td>0.158162</td>
-      <td>0.330211</td>
-      <td>0.347231</td>
-      <td>3</td>
-      <td>0.817697</td>
-      <td>0.099253</td>
-      <td>0.167556</td>
-      <td>0.361502</td>
-      <td>0.323782</td>
-      <td>3</td>
-      <td>0.811444</td>
-      <td>0.009851</td>
-      <td>0.809677</td>
-      <td>0.543657</td>
-      <td>0.377459</td>
+      <td>0.657351</td>
+      <td>0.848258</td>
+      <td>0.853249</td>
+      <td>0.851192</td>
+      <td>0.802512</td>
+      <td>0.083828</td>
       <td>3</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>9.149502</td>
-      <td>0.332310</td>
-      <td>1.868701</td>
-      <td>0.017064</td>
-      <td>KernelPCA()</td>
+      <td>14.933655</td>
+      <td>0.119437</td>
+      <td>2.138293</td>
+      <td>0.098092</td>
+      <td>KernelPCA(gamma=0.03)</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>LogisticRegression()</td>
+      <td>LogisticRegression(class_weight='balanced', penalty='l1', solver='liblinear')</td>
       <td>balanced</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -111,32 +89,21 @@
       <td>liblinear</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'decomposition': KernelPCA(), 'decomposition__gamma': 0.03, 'decomposition__kernel': 'linear', 'estimator': LogisticRegression(), 'estimator__C': 1.0, 'estimator__class_weight': 'balanced', 'estimator__penalty': 'l1', 'estimator__solver': 'liblinear', 'scaler': StandardScaler()}</td>
-      <td>0.852323</td>
-      <td>0.855749</td>
-      <td>0.859813</td>
-      <td>0.855962</td>
-      <td>0.003061</td>
-      <td>1</td>
-      <td>0.899787</td>
-      <td>0.900747</td>
-      <td>0.902882</td>
-      <td>0.901138</td>
-      <td>0.001293</td>
-      <td>1</td>
-      <td>0.809616</td>
-      <td>0.861744</td>
-      <td>0.912344</td>
-      <td>0.861235</td>
-      <td>0.041940</td>
+      <td>{'decomposition': KernelPCA(gamma=0.03), 'decomposition__gamma': 0.03, 'decomposition__kernel': 'linear', 'estimator': LogisticRegression(class_weight='balanced', penalty='l1', solver='liblinear'), 'estimator__C': 1.0, 'estimator__class_weight': 'balanced', 'estimator__penalty': 'l1', 'estimator__solver': 'liblinear', 'scaler': StandardScaler()}</td>
+      <td>0.855195</td>
+      <td>0.851116</td>
+      <td>0.850403</td>
+      <td>0.850482</td>
+      <td>0.851799</td>
+      <td>0.001980</td>
       <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>7.724749</td>
-      <td>0.352718</td>
-      <td>0.533274</td>
-      <td>0.029343</td>
+      <td>11.312560</td>
+      <td>0.327330</td>
+      <td>0.521021</td>
+      <td>0.086115</td>
       <td>PCA()</td>
       <td>10</td>
       <td>auto</td>
@@ -155,23 +122,12 @@
       <td>auto</td>
       <td>rbf</td>
       <td>{'decomposition': PCA(), 'decomposition__n_components': 10, 'decomposition__svd_solver': 'auto', 'decomposition__whiten': False, 'estimator': SVC(), 'estimator__C': 35.938136638046274, 'estimator__class_weight': 'balanced', 'estimator__gamma': 'auto', 'estimator__kernel': 'rbf', 'scaler': StandardScaler()}</td>
-      <td>0.854912</td>
-      <td>0.856009</td>
-      <td>0.852169</td>
-      <td>0.854363</td>
-      <td>0.001615</td>
-      <td>2</td>
-      <td>0.900853</td>
-      <td>0.894344</td>
-      <td>0.899680</td>
-      <td>0.898292</td>
-      <td>0.002833</td>
-      <td>2</td>
-      <td>0.910694</td>
-      <td>0.837920</td>
-      <td>0.809424</td>
-      <td>0.852679</td>
-      <td>0.042640</td>
+      <td>0.853249</td>
+      <td>0.853249</td>
+      <td>0.851828</td>
+      <td>0.839707</td>
+      <td>0.849508</td>
+      <td>0.005688</td>
       <td>2</td>
     </tr>
   </tbody>
