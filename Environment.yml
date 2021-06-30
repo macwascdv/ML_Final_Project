@@ -18,3 +18,4 @@ dependencies:
     - seaborn
     - neptune-client
     - neptune-notebooks
+    - pickle
